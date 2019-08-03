@@ -1,0 +1,43 @@
+package com.mydomain.edittext;
+
+import android.graphics.Color;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.Switch;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    LinearLayout lay;
+    EditText et;
+    TextView tv;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        lay = findViewById(R.id.ll);
+        et =findViewById(R.id.et);
+
+        tv=findViewById(R.id.tv);
+    }
+
+    public void Display(View view) {
+        String abc= et.getText().toString().trim();
+        tv.setText(abc);
+         switch (et.getText()){
+
+             case red: lay.setBackgroundColor(Color.RED);
+             break;
+             case blue:
+         }
+    {
+
+
+    }
+
+    }
+
+    }
