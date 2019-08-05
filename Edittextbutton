@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
     public void Display(View view) {
         String abc= et.getText().toString().trim();
         tv.setText(abc);
-         switch (et.getText()){
+         switch (abc){
 
-             case red: lay.setBackgroundColor(Color.RED);
+             case "red": lay.setBackgroundColor(Color.RED);
              break;
              case blue:
          }
